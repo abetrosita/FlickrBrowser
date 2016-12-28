@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity {
 
-    static final String LOG_TAG = "MainActivity";
     Menu itemMenu;
 
     @Override
@@ -33,7 +32,7 @@ public class MainActivity extends BaseActivity {
                 new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-//                        Toast.makeText(MainActivity.this, "Item Clicked", Toast.LENGTH_SHORT).show();
+//                      Toast.makeText(MainActivity.this, "Item Clicked", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(MainActivity.this, PhotoDetailActivity.class);
                         i.putExtra(PHOTO_TRANSFER, flickrRecyclerViewAdapter.getPhoto(position));
                         startActivity(i);
@@ -53,7 +52,6 @@ public class MainActivity extends BaseActivity {
         searchPhotos();
 
     }
-    
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
