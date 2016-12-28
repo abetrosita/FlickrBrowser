@@ -42,6 +42,7 @@ public class MainActivity extends BaseActivity {
                     @Override
                     public void onItemLongClick(View view, int position) {
                         Toast.makeText(MainActivity.this, "Long Clicked", Toast.LENGTH_SHORT).show();
+                        //Add code to hide on swipe left or right
                     }
                 }));
     }
