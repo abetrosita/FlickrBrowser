@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Theme.Flickr" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+
+</resources>
